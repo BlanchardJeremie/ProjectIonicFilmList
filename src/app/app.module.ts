@@ -4,16 +4,24 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { LoginPage } from '../pages/login/login';
+import { FavorisPage } from '../pages/favoris/favoris';
+import { PreferencePage } from '../pages/preference/preference';
+import { TrailerPage } from '../pages/trailer/trailer';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { TodoListComponent } from '../components/todo-list/todo-list';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    TrailerPage,
+    LoginPage,
+    FavorisPage,
+    PreferencePage,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +31,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    TrailerPage,
+    LoginPage,
+    FavorisPage,
+    PreferencePage
   ],
   providers: [
     StatusBar,
